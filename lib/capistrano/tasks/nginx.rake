@@ -4,7 +4,7 @@ namespace :nginx do
     conf_template = <<-EOF
 upstream <%= fetch(:application) %>_puma {
     server unix:/<%= shared_path %>/tmp/sockets/puma.sock fail_timeout=0;
-})
+}
 
 server {
     server_name <%= fetch(:domain, 'localhost') %>;
