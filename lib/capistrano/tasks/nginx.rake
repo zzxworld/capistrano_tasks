@@ -35,7 +35,6 @@ server {
     }
 
     location ^~ /assets/ {
-        gzip_static on;
         expires max;
         add_header Cache-Control public;
     }
