@@ -10,9 +10,12 @@
 
 * 创建项目的 *.rbenv-vars* 配置文件:
 
-        cap production rbenv:setup
+      cap production rbenv:setup
 
 * 创建项目的 Nginx 配置文件:
 
-        cap production nginx:setup
+      cap production nginx:setup
 
+* 从服务器端备份数据
+
+      cap production backup
